@@ -10,7 +10,7 @@ A secure, user-friendly cryptocurrency wallet generator and manager built with N
 
 ## Features
 
-- 🔐 **Secure Wallet Generation**: Create EVM-compatible wallets using ethers.js
+- 🔐 **Secure Wallet Creation**: Create EVM-compatible wallets using ethers.js
 - 🔒 **Client-Side Encryption**: AES-256 encryption with PBKDF2 key derivation
 - 💰 **Multi-Network Support**: View balances on Ethereum and BNB Chain testnets
 - 💾 **Local Storage**: Encrypted wallets stored securely in browser localStorage
@@ -30,7 +30,7 @@ A secure, user-friendly cryptocurrency wallet generator and manager built with N
 - **Frontend**: Next.js 14, React 18, TypeScript
 - **State Management**: Redux Toolkit
 - **Styling**: Tailwind CSS
-- **Wallet Generation**: ethers.js
+- **Wallet Creation**: ethers.js
 - **Encryption**: crypto-js
 - **Testing**: Jest, React Testing Library
 - **Storage**: Browser localStorage with SSR safety
@@ -86,7 +86,7 @@ Balances are automatically fetched and displayed for:
 ├── components/
 │   ├── BalanceDisplay.tsx  # Balance information display
 │   ├── PrivateKeyModal.tsx # Private key decryption modal
-│   ├── WalletGenerator.tsx # Wallet generation form
+│   ├── WalletCreator.tsx   # Wallet creation form
 │   └── WalletList.tsx      # Wallet list and management
 ├── store/
 │   ├── index.ts           # Redux store configuration
@@ -97,7 +97,7 @@ Balances are automatically fetched and displayed for:
 ├── utils/
 │   ├── crypto.ts          # Encryption/decryption utilities
 │   ├── storage.ts         # localStorage utilities
-│   └── wallet.ts          # Wallet generation utilities
+│   └── wallet.ts          # Wallet creation utilities
 └── __tests__/             # Comprehensive test suite
 ```
 
@@ -115,11 +115,10 @@ npm test -- --coverage
 ```
 
 **Test Coverage:**
-- ✅ Wallet Generation (`wallet.test.tsx`)
-- ✅ Encryption/Decryption (`crypto.test.tsx`) 
-- ✅ Local Storage (`storage.test.tsx`)
-- ✅ Redux State Management (`walletSlice.test.tsx`)
-- ✅ Component Rendering (`balanceDisplay.test.tsx`, `walletCreator.test.tsx`)
+- ✅ Wallet Creation (`Wallet.test.tsx`)
+- ✅ Encryption/Decryption (`Crypto.test.tsx`) 
+- ✅ Redux State Management (`WalletSlice.test.tsx`)
+- ✅ Component Rendering (`BalanceDisplay.test.tsx`, `WalletCreator.test.tsx`)
 
 ## Architecture Decisions
 
@@ -187,7 +186,7 @@ MIT License - see [LICENSE](LICENSE) file for details.
 ⚠️ **Important**: This is a demonstration application. For production use:
 - Implement proper key management
 - Add hardware wallet integration
-- Use secure random number generation
+- Use secure random number creation
 - Consider using a more robust encryption library
 - Implement proper error logging and monitoring
 
