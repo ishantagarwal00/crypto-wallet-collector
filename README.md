@@ -1,16 +1,16 @@
-# Simple Wallet Keeper
+# Crypto Wallet Manager
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/ishantagarwal00/crypto-wallet-collector)
 [![Live Demo](https://img.shields.io/badge/demo-live-green.svg)](https://crypto-wallet-collector.vercel.app/)
 [![Tests](https://img.shields.io/badge/tests-passing-brightgreen.svg)](#testing)
 
-A secure, user-friendly cryptocurrency wallet generator and manager built with Next.js and Redux Toolkit. Generate EVM-compatible wallets, store them securely with client-side encryption, and view balances across multiple networks.
+A secure, user-friendly cryptocurrency wallet generator and manager built with Next.js and Redux Toolkit. Create EVM-compatible wallets, store them securely with client-side encryption, and view balances across multiple networks.
 
 ## 🚀 **[Live Demo](https://crypto-wallet-collector.vercel.app/)**
 
 ## Features
 
-- 🔐 **Secure Wallet Generation**: Generate EVM-compatible wallets using ethers.js
+- 🔐 **Secure Wallet Generation**: Create EVM-compatible wallets using ethers.js
 - 🔒 **Client-Side Encryption**: AES-256 encryption with PBKDF2 key derivation
 - 💰 **Multi-Network Support**: View balances on Ethereum and BNB Chain testnets
 - 💾 **Local Storage**: Encrypted wallets stored securely in browser localStorage
@@ -59,10 +59,10 @@ npm run dev
 
 ## Usage Guide
 
-### 1. Generate a New Wallet
+### 1. Create a New Wallet
 
 1. Enter a strong password (minimum 8 characters)
-2. Click "Generate Wallet"
+2. Click "Create Wallet"
 3. Your new wallet will appear in the list below
 
 ### 2. View Private Keys
@@ -196,8 +196,8 @@ MIT License - see [LICENSE](LICENSE) file for details.
 This project was built as a **Frontend Engineer Technical Test** and meets all requirements:
 
 ### ✅ **User Requirements**
-- [x] Generate wallets with button click
-- [x] Display list of generated wallets
+- [x] Create wallets with button click
+- [x] Display list of created wallets
 - [x] View private keys with password authentication
 - [x] Display testnet balances
 
